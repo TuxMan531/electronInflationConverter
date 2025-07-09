@@ -1,5 +1,5 @@
 Basic Inflation calculator! 
-work all the way back from 1794 to 2024
+work all the way back from 1774 to 2024
 
 how to run: 
 1. clone repo
