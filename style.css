@@ -79,6 +79,9 @@ input {
     text-align: center;
     border-radius: 10px;
     background-color: antiquewhite;
+    height: 50px;          /* Makes it taller */
+    font-size: 16px;       /* Ensures text is vertically centered */
+    box-sizing: border-box;
 }
 button {
   background-color: #04AA6D;
