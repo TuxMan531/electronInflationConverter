@@ -12,14 +12,14 @@
     <title>Inflation Converter 2025</title>
 </head>
 <body>
-    <h1 style="display: inline;"> Inflation Converter </h1><h1 id="usd">(USD)</h1>
+    <h1 class="loading-text"> Inflation Converter </h1>
     <br><hr>
     <p>$</p> <p id="special">Amount</p> <p>$</p><br>
-    <input id="Amount" placeholder="Enter amount" required> </input><br>
+    <input id="Amount" placeholder="Enter amount" class="input" required> </input><br>
     <p>xx </p><p id="special">Year</p><p> xx</p><br>
-    <input id="Year" placeholder="Enter year" required></input>
+    <input id="Year" placeholder="Enter year"  class="input" required></input>
     <br><br>
-    <button id="calculate" onclick="runCalc()">Calculate</button>
+    <button id="calculate" class="button" onclick="runCalc()">Calculate</button>
 
     <h2 id="displayfinal"></h2>
 </body>
