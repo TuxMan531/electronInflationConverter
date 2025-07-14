@@ -74,69 +74,22 @@
 
 /* end of text box style*/
 /* button style */
-/* From Uiverse.io by Randdose */ 
-.button {
-  all: unset;
-  margin: 20px auto;
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding: 0.6em 2em;
-  border: mediumspringgreen solid 0.15em;
-  border-radius: 0.25em;
-  color: rgb(0, 170, 105);
-  font-size: 1.5em;
-  font-weight: 600;
+.btn {
+  width: 170px;
+  height: 60px;
+  font-size: 18px;
+  background: #fff;
+  border: none;
+  border-radius: 50px;
+  color: #000;
+  outline: none;
   cursor: pointer;
-  overflow: hidden;
-  transition: border 300ms, color 300ms;
-  user-select: none;
+  transition: all 0.4s;
 }
 
-.button p {
-  z-index: 1;
-}
-
-.button:hover {
-  color: #212121;
-}
-
-.button:active {
-  border-color: teal;
-}
-
-.button::after, .button::before {
-  content: "";
-  position: absolute;
-  width: 9em;
-  aspect-ratio: 1;
-  background: mediumspringgreen;
-  opacity: 50%;
-  border-radius: 50%;
-  transition: transform 500ms, background 300ms;
-}
-
-.button::before {
-  left: 0;
-  transform: translateX(-8em);
-}
-
-.button::after {
-  right: 0;
-  transform: translateX(8em);
-}
-
-.button:hover:before {
-  transform: translateX(-1em);
-}
-
-.button:hover:after {
-  transform: translateX(1em);
-}
-
-.button:active:before,
-.button:active:after {
-  background: teal;
+.btn:hover {
+  background: #073b4c;
+  color: #fff;
 }
 /* end of button style*/
 
@@ -151,6 +104,8 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: #e8bed1;
   background: radial-gradient(circle,rgba(232, 190, 209, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  padding: 0;
+  margin: 0;
 }
 hr {
   border: none;
@@ -160,6 +115,10 @@ hr {
 }
 body {
     text-align: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 /* start of title */
 h1 {
@@ -173,6 +132,7 @@ h1 {
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+  font: 550 clamp(2em, 10vw, 10em) exo, sans-serif;
 }
 
 h1 span {
@@ -180,26 +140,6 @@ h1 span {
   font-size: 0.5em;
   line-height: 1.3;
 }
-h1 em {
-  font-style: normal;
-  font-weight: 600;
-}
-.loading-text {
-	place-self: center;
-	background: linear-gradient(90deg, #00f, rgb(134, 255, 170), #00f) -100%/ 200%;
-	/* being excessively careful with compat, 
-	 * though this has been supported unprefixed and 
-	 * in the shorthand across major browsers for a while */
-	-webkit-background-clip: text;
-	        background-clip: text;
-	/* use color, don't use -webkit-text-fill-color anymore, 
-	 * was meant to solve a problem we haven't had in years */
-	color: transparent;
-	font: 550 clamp(2em, 10vw, 10em) exo, sans-serif;
-	animation: shimmer 2s linear infinite
-}
-
-@keyframes shimmer { to { background-position: 100% } }
 /* end of title*/
 
 h2 {
@@ -224,20 +164,7 @@ input {
     font-size: 16px;       /* Ensures text is vertically centered */
     box-sizing: border-box;
 }
-/*
-button {
-  background-color: #04AA6D;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition: 0.3s;
-} */
 button:hover {
-    background-color: #046d46;
     cursor: pointer;
 }
 
@@ -245,3 +172,16 @@ button:hover {
     font-family: "Ubuntu";
     font-style: normal;
 }
+ /* sticky feet */
+
+ footer {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 515px;
+  left: 0px;
+ }
+
+ footer p {
+  font-size: small;
+ }

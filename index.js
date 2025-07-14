@@ -46,7 +46,7 @@ function runCalc() {
             beReady += 1;
             console.log("added one, for year")
         } else {
-            year.value = "Enter a year 2024 - 1774";
+            year.value = "Enter a year 1774 - 2024 ";
         }
     } else {
         console.log(yearAmount);

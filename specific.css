@@ -1,0 +1,14 @@
+h3 {
+    font-size: 27px;
+}
+
+p {
+    display: block;
+    font-size: medium;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+ footer {
+  top: 480px;
+ }
