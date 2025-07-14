@@ -64,9 +64,12 @@ function runCalc() {
         console.log("cpito: " + cpito)
         console.log("cpifrom: " + cpifrom)
         console.log("final: " + adjustedValue)
+        let formatInput = new Intl.NumberFormat("en-US", {style: "currency", currency: "USD"}).format(numAmount);
+        let formatNumber = new Intl.NumberFormat("en-US", {style: "currency", currency: "USD"}).format(adjustedValue);
+        
         //// display
-        document.getElementById("displayfinal").innerHTML = "$" +
-            numAmount + " in " + yearAmount + " is <span id=finalcolor>$" + adjustedValue + "</span> in 2025!"
+        document.getElementById("displayfinal").innerHTML =
+            formatInput + " in " + yearAmount + " is <span id=finalcolor>" + formatNumber + "</span> in 2025!"
 
     }
 
